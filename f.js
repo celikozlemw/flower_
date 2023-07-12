@@ -192,7 +192,7 @@
 function changeColor(element, duration) {
     var currentColor = 237;
     var targetColor = 0;
-    var interval = 10;
+    var interval = 8;
     var steps = duration / interval;
     var stepSize = (currentColor - targetColor) / steps;
 
@@ -211,7 +211,7 @@ function changeColor(element, duration) {
 setTimeout(function() {
     for (var i = 0; i < petals.length; i++) {
         if (i !== 25) {
-            changeColor(petals[i], 2000);
+            changeColor(petals[i], 3000);
         }
     }
 }, 20000);
